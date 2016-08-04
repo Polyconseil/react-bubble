@@ -4,6 +4,8 @@ A simple and customizable bubble for react
 
 # Exemple
 
+![Example](https://github.com/Polyconseil/react-bubble/raw/master/examples/images/simple_example.png "Simple bubble")
+
 ```javascript
 <span>
   Text to bubble
