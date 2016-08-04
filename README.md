@@ -2,7 +2,7 @@
 
 A simple and customizable bubble for react
 
-# Exemple
+# Example
 
 ![Example](https://github.com/Polyconseil/react-bubble/raw/master/examples/images/simple_example.png "Simple bubble")
 
@@ -36,7 +36,7 @@ npm install --save react-bubble
 
 # Style
 
-If you customize the arrow style, I strongly recommand you to override the delta rendering with customArrowRenderWithDelta since Bubble won't know the logic of the transformation.
+If you customize the arrow style, I strongly recommend you to override the delta rendering with customArrowRenderWithDelta since Bubble won't know the logic of the transformation.
 
 ### Default props
 ```javascript
