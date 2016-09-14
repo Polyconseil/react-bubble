@@ -14,10 +14,15 @@
     "arrow-body-style": 0,
     "react/jsx-closing-bracket-location": 0,
     "react/jsx-indent-props": 0,
+    "react/jsx-filename-extension": 0,
     "no-param-reassign": 0,
     "object-shorthand": 1,
     "react/jsx-no-bind": 1,
 
-    "no-debugger": 2,
+    "no-debugger": 2
+  },
+  "globals": {
+    "document": false,
+    "window": false
   }
 }
