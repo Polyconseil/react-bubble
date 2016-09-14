@@ -7,7 +7,9 @@
     "clean": "rm -rf build",
     "build": "npm run clean && babel --out-dir build lib",
     "prepublish": "npm run build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "doks": "doks",
+    "doks-build": "doks --build"
   },
   "repository": {
     "type": "git",
@@ -45,6 +47,7 @@
     "eslint-config-airbnb": "^4.0.0",
     "eslint-plugin-react": "^3.16.1",
     "react": "^0.14.0",
+    "react-doks": "^1.0.3",
     "react-dom": "^0.14.0",
     "webpack": "^1.12.6"
   }

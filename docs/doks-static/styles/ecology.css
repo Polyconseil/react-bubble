@@ -1,0 +1,70 @@
+/**
+  To override ecology's styles, we have no other choice but load this stylesheet with CSS-loader in the docs
+  component file. It will be appended to the head tag in a <style> tag. However, its selectors are very specific,
+  so that they only target ecology components.
+**/
+
+
+/*
+  API docs :
+*/
+.markdown-body table {
+  display: table;
+}
+
+/*
+  Props in API doc styling :
+*/
+.markdown-body .Prop-name, .markdown-body .Prop-default-value, .markdown-body .Prop-examples-value, .markdown-body code {
+  padding: 0.15rem 0.3rem;
+
+  border-radius: 0.2em;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.markdown-body .Prop-required {
+  color: red;
+  font-weight: bold;
+}
+.markdown-body .Prop-required:before {
+  content: ' (';
+}
+.markdown-body .Prop-required:after {
+  content: ')';
+}
+
+.markdown-body .Prop-type:before {
+  content: ' : ';
+}
+.markdown-body .Prop-default-title, .markdown-body .Prop-examples-title {
+  color: black;
+  font-weight: bold;
+}
+
+.markdown-body .Prop-examples-title:before, .markdown-body .Prop-default:before {
+  content: "\a ";
+  white-space: pre;
+}
+
+/**
+  Buttons of the playground (export gist and copy to clipboard), skinned github-like
+**/
+.markdown-body .Interactive .Toolbar button {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 12px;
+  margin: 0 16px 16px 0;
+  background: #ddd linear-gradient(#eee, #ddd);
+}
+
+/**
+  Block where playground code is rendered :
+**/
+.markdown-body .Interactive .previewArea {
+  border: 1px solid #d8d8d8;
+  background-color: white;
+  padding: 15px;
+  margin: 15px 0;
+}
+

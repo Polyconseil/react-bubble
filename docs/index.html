@@ -1,0 +1,42 @@
+<head>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.js"></script>
+  <![endif]-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Doks</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link crossorigin="anonymous" href="doks-static/styles/reset.css" media="all" rel="stylesheet" />
+  <link crossorigin="anonymous" href="doks-static/styles/style.css" media="all" rel="stylesheet" />
+  <link crossorigin="anonymous" href="doks-static/styles/github-markdown-css.css" media="all" rel="stylesheet" />
+  <link crossorigin="anonymous" href="doks-static/styles/font-awesome.min.css" media="all" rel="stylesheet" />
+  <link crossorigin="anonymous" href="doks-static/styles/ecology.css" media="all" rel="stylesheet" />
+
+
+  <!-- ECOLOGY ASSETS -->
+  <link rel="stylesheet" href="doks-static/codemirror/codemirror-5.0.0.min.css"/>
+  <link rel="stylesheet" href="doks-static/codemirror/codemirror-5.0.0-theme-monokai.min.css"/>
+  <!-- /ECOLOGY ASSETS -->
+
+</head>
+<body>
+
+  <div id="root">
+    <div style="width: 100%; margin-top: 200px; text-align: center">
+      <h1><span class="fa fa-spinner fa-spin"></span></h1>
+      <h1 id="loader"></h1>
+    </div>
+  </div>
+
+  <script>var l=['Loading docs', 'Brewing coffee', 'Getting dressed', 'Transpiling C#', "Spinning up the hamster", "Shoveling coal into the server", "Please wait...<br><br><br>...as if you had any other choice...", "Testing your patience", "I know your data is here somewhere", "sudo rm -rf / && echo 'Fetching Docs'", "Performing secret tasks...", "Pretending to work...", "Mining Bitcoins...",];document.getElementById('loader').innerHTML = l[Math.floor(Math.random() * l.length)];</script>
+
+  <!-- ECOLOGY SCRIPTS -->
+  <script type="text/javascript" src="doks-static/codemirror/codemirror-5.0.0.min.js"></script>
+  <script type="text/javascript" src="doks-static/codemirror/codemirror-5.0.0-mode-javascript.min.js"></script>
+  <!-- /ECOLOGY SCRIPTS -->
+
+  <script type="text/javascript" src="dist/bundle.js"></script>
+
+</body>

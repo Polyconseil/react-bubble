@@ -2,43 +2,39 @@
 
 A simple and customizable bubble for react
 
-# Example
+## Example
 
 ![Example](https://github.com/Polyconseil/react-bubble/raw/master/examples/images/simple_example.png "Simple bubble")
 
-```javascript
-<span>
-  Text to bubble
-  <Bubble width={320} height={100}>
-    Content Test
-  </Bubble>
-</span>
+The bubble points to its parent :
+
+```playground_norender
+const Demo = () => (
+    <span>
+      Text to bubble
+      <Bubble width={250} height={80}>
+        Content Test
+      </Bubble>
+    </span>   
+);
+
+ReactDOM.render(<Demo />, mountNode);
+    
+    
 ```
 
-# Installation
+## Installation
 
 ```
 npm install --save react-bubble
 ```
 
-# Props
-
-| Name                       | Type     | Required | Default value      | Description
-|:---------------------------|:--------:|:--------:|:------------------:|:------------------------
-| width                      | Number   | True     | -                  | Width of the bubble
-| height                     | Number   | True     | -                  | Height of the bubble
-| arrowMargin                | Number   | False    | 15                 | Margin between the bubble and the sibling element
-| maxDistanceBeforeCorrect   | Number   | False    | 10                 | Distance between the bubble border and window border before correcting position
-| onMouseEnter               | Function | False    | -                  | Function triggered when entering the bubble
-| onMouseLeave               | Function | False    | -                  | Function triggered when leaving the bubble
-| customArrowRenderWithDelta | Function | False    | -                  | Function to customize the render of the correction
-| style                      | Object   | False    | See the style part | Style object
-
-# Style
+## Style
 
 If you customize the arrow style, I strongly recommend you to override the delta rendering with customArrowRenderWithDelta since Bubble won't know the logic of the transformation.
 
-### Default props
+### Default style properties
+
 ```javascript
 {
   container: {
@@ -84,3 +80,5 @@ If you customize the arrow style, I strongly recommend you to override the delta
   },
 }
 ```
+
+## Props
