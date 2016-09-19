@@ -80,5 +80,3 @@ If you customize the arrow style, I strongly recommend you to override the delta
   },
 }
 ```
-
-## Props

@@ -1,8 +1,11 @@
 import React from 'react';
 import Bubble from '../../lib/Bubble.js';
 
-export const overview = require('!!raw!../../README.md');
+const rawOverview = require('!!raw!../../README.md');
+export const overview = rawOverview + `\n\n## Props table`;
+
 export const documentedComponents = {Bubble};
+
 export const source = require('!!raw!../../lib/Bubble.js');
 
 export class Explorer extends React.Component {
