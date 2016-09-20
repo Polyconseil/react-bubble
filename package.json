@@ -1,6 +1,6 @@
 {
   "name": "react-bubble",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple and customizable react bubble",
   "main": "build/index.js",
   "scripts": {
