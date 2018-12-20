@@ -39,8 +39,6 @@ If you customize the arrow style, I strongly recommend you to override the delta
 {
   container: {
     position: 'fixed',
-    top: 0,
-    left: 0,
     backgroundColor: 'rgb(238, 238, 238)',
     minHeight: 70,
     display: 'flex',
